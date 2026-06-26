@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>10 Conversas Que Todo Casal Deve Ter — Antes Que Seja Tarde Demais</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Lato:wght@300;400;700&display=swap');
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --vinho: #6B1A2A;
+    --vinho-dark: #3D0A14;
+    --rose: #C4586A;
+    --ouro: #C9A84C;
+    --ouro-light: #E8C96A;
+    --creme: #FDF6EE;
+    --texto: #2D1B1B;
+    --suave: #8B5E6A;
+  }
+
+  html { scroll-behavior: smooth; }
+  body { background: var(--creme); color: var(--texto); font-family: 'Lato', sans-serif; line-height: 1.8; }
+
+  /* ──── HERO ──── */
+  .hero {
+    background: linear-gradient(160deg, #1A0209 0%, #3D0A14 35%, #6B1A2A 65%, #3D0A14 100%);
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    padding: 80px 24px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: radial-gradient(circle at 20% 80%, rgba(201,168,76,0.08) 0%, transparent 50%),
+                      radial-gradient(circle at 80% 20%, rgba(196,88,106,0.08) 0%, transparent 50%);
+  }
+
+  .hero-inner {
+    max-width: 780px;
+    text-align: center;
+    position: relative;
+  }
+
+  .hero-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--ouro);
+    margin-bottom: 36px;
+  }
+  .hero-eyebrow::before, .hero-eyebrow::after {
+    content: ''; display: block; width: 28px; height: 1px; background: var(--ouro); opacity: 0.6;
+  }
+
+  .hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2.2rem, 5.5vw, 4rem);
+    font-weight: 700;
+    color: #fff;
+    line-height: 1.2;
+    margin-bottom: 12px;
+  }
+  .hero h1 em { color: var(--ouro); font-style: italic; }
+
+  .hero-sub {
+    font-size: clamp(1rem, 2vw, 1.25rem);
+    color: rgba(255,255,255,0.65);
+    max-width: 560px;
+    margin: 20px auto 44px;
+    font-weight: 300;
+  }
+
+  .hero-cta-btn {
+    display: inline-block;
+    background: linear-gradient(135deg, var(--ouro), var(--ouro-light), var(--ouro));
+    color: var(--vinho-dark);
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-decoration: none;
+    padding: 18px 48px;
+    border-radius: 50px;
+    box-shadow: 0 8px 32px rgba(201,168,76,0.35);
+    transition: all 0.3s;
+    cursor: pointer;
+    border: none;
+  }
+  .hero-cta-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 14px 48px rgba(201,168,76,0.45);
+  }
+
+  .hero-price-note {
+    margin-top: 16px;
+    color: rgba(255,255,255,0.45);
+    font-size: 0.82rem;
+  }
+
+  .hero-scroll {
+    position: absolute;
+    bottom: 32px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    color: rgba(255,255,255,0.3);
+    font-size: 0.7rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    animation: bobFloat 2s ease-in-out infinite;
+  }
+  @keyframes bobFloat {
+    0%, 100% { transform: translateX(-50%) translateY(0); }
+    50% { transform: translateX(-50%) translateY(7px); }
+  }
+
+  /* ──── DIVIDER ──── */
+  .divider {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 300px;
+  }
+  .divider::before, .divider::after {
+    content: ''; flex: 1; height: 1px; background: var(--ouro); opacity: 0.35;
+  }
+  .divider span { color: var(--ouro); font-size: 1rem; }
+
+  /* ──── SEÇÕES GERAIS ──── */
+  .section { padding: 80px 24px; }
+  .container { max-width: 820px; margin: 0 auto; }
+
+  .label {
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--ouro);
+    display: block;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .section-h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(1.6rem, 3.5vw, 2.5rem);
+    color: var(--vinho);
+    text-align: center;
+    line-height: 1.3;
+    margin-bottom: 16px;
+  }
+  .section-h2 em { font-style: italic; color: var(--rose); }
+
+  .section-lead {
+    text-align: center;
+    font-size: 1.05rem;
+    color: var(--suave);
+    max-width: 620px;
+    margin: 0 auto 56px;
+    line-height: 1.8;
+  }
+
+  /* ──── PROBLEMA ──── */
+  .problema { background: #fff; }
+
+  .problema-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 24px;
+    margin-top: 48px;
+  }
+
+  .problema-card {
+    background: var(--creme);
+    border-radius: 14px;
+    padding: 28px 24px;
+    border-left: 3px solid var(--rose);
+  }
+  .problema-card .icon {
+    font-size: 1.8rem;
+    margin-bottom: 14px;
+    display: block;
+  }
+  .problema-card h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.05rem;
+    color: var(--vinho);
+    margin-bottom: 8px;
+  }
+  .problema-card p {
+    font-size: 0.9rem;
+    color: var(--suave);
+    line-height: 1.7;
+  }
+
+  /* ──── CITAÇÃO ──── */
+  .citacao-section {
+    background: linear-gradient(135deg, var(--vinho-dark), var(--vinho));
+    padding: 80px 24px;
+    text-align: center;
+  }
+  .citacao-section blockquote {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(1.2rem, 2.5vw, 1.8rem);
+    font-style: italic;
+    color: #fff;
+    max-width: 700px;
+    margin: 0 auto 20px;
+    line-height: 1.6;
+  }
+  .citacao-section cite {
+    color: var(--ouro);
+    font-size: 0.8rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    font-style: normal;
+  }
+
+  /* ──── CONTEÚDO ──── */
+  .conteudo-section { background: var(--creme); }
+
+  .conteudo-lista {
+    list-style: none;
+    display: grid;
+    gap: 14px;
+  }
+  .conteudo-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px 24px;
+    box-shadow: 0 2px 12px rgba(107,26,42,0.06);
+  }
+  .conteudo-num {
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--vinho), var(--rose));
+    color: #fff;
+    font-family: 'Playfair Display', serif;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+  }
+  .conteudo-item h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1rem;
+    color: var(--vinho);
+    margin-bottom: 4px;
+  }
+  .conteudo-item p {
+    font-size: 0.88rem;
+    color: var(--suave);
+    line-height: 1.6;
+  }
+
+  /* ──── PARA QUEM ──── */
+  .para-quem-section { background: #fff; }
+
+  .checks-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 16px;
+    margin-top: 40px;
+  }
+
+  .check-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 16px;
+    border-radius: 10px;
+    background: var(--creme);
+  }
+  .check-icon {
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: var(--rose);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.75rem;
+    margin-top: 1px;
+  }
+  .check-item p { font-size: 0.92rem; color: var(--texto); line-height: 1.6; }
+
+  /* ──── PRECO ──── */
+  .preco-section {
+    background: linear-gradient(160deg, #1A0209, #3D0A14, #6B1A2A);
+    padding: 100px 24px;
+    text-align: center;
+  }
+
+  .preco-card {
+    max-width: 500px;
+    margin: 0 auto;
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(201,168,76,0.25);
+    border-radius: 24px;
+    padding: 52px 40px;
+  }
+
+  .preco-label {
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--ouro);
+    margin-bottom: 20px;
+    display: block;
+  }
+
+  .preco-titulo {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(1.4rem, 3vw, 1.9rem);
+    color: #fff;
+    margin-bottom: 32px;
+    line-height: 1.35;
+  }
+
+  .preco-valor-de {
+    font-size: 0.9rem;
+    color: rgba(255,255,255,0.4);
+    text-decoration: line-through;
+    margin-bottom: 4px;
+  }
+
+  .preco-valor {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: 6px;
+    margin-bottom: 10px;
+  }
+  .preco-cifrao { font-size: 1.2rem; color: var(--ouro); font-weight: 700; }
+  .preco-numero { font-family: 'Playfair Display', serif; font-size: 4rem; color: var(--ouro); line-height: 1; font-weight: 700; }
+  .preco-cents { font-size: 1.4rem; color: var(--ouro); font-weight: 700; }
+
+  .preco-nota {
+    font-size: 0.8rem;
+    color: rgba(255,255,255,0.4);
+    margin-bottom: 36px;
+  }
+
+  .preco-lista {
+    list-style: none;
+    text-align: left;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .preco-lista li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.9rem;
+    color: rgba(255,255,255,0.75);
+  }
+  .preco-lista li::before {
+    content: '✓';
+    flex-shrink: 0;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: rgba(201,168,76,0.2);
+    color: var(--ouro);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.75rem;
+    font-weight: 700;
+  }
+
+  .btn-comprar {
+    display: block;
+    width: 100%;
+    background: linear-gradient(135deg, var(--ouro), var(--ouro-light), var(--ouro));
+    color: var(--vinho-dark);
+    font-family: 'Lato', sans-serif;
+    font-size: 1.05rem;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 20px;
+    border-radius: 50px;
+    text-align: center;
+    box-shadow: 0 8px 32px rgba(201,168,76,0.3);
+    transition: all 0.3s;
+    cursor: pointer;
+    border: none;
+    letter-spacing: 0.02em;
+  }
+  .btn-comprar:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 14px 48px rgba(201,168,76,0.5);
+  }
+
+  .garantia {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    color: rgba(255,255,255,0.4);
+    font-size: 0.8rem;
+  }
+
+  /* ──── DEPOIMENTOS ──── */
+  .depo-section { background: var(--creme); }
+
+  .depo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 24px;
+    margin-top: 48px;
+  }
+
+  .depo-card {
+    background: #fff;
+    border-radius: 16px;
+    padding: 28px;
+    box-shadow: 0 4px 20px rgba(107,26,42,0.07);
+    border-top: 3px solid var(--rose);
+  }
+  .depo-stars { color: var(--ouro); font-size: 0.9rem; margin-bottom: 14px; }
+  .depo-texto {
+    font-family: 'Playfair Display', serif;
+    font-size: 1rem;
+    font-style: italic;
+    color: var(--texto);
+    line-height: 1.75;
+    margin-bottom: 18px;
+  }
+  .depo-autor {
+    font-size: 0.82rem;
+    font-weight: 700;
+    color: var(--vinho);
+    letter-spacing: 0.05em;
+  }
+  .depo-cidade { font-size: 0.78rem; color: var(--suave); }
+
+  /* ──── FAQ ──── */
+  .faq-section { background: #fff; }
+
+  .faq-lista { max-width: 680px; margin: 48px auto 0; }
+
+  .faq-item {
+    border-bottom: 1px solid rgba(107,26,42,0.1);
+    padding: 20px 0;
+    cursor: pointer;
+  }
+  .faq-pergunta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    font-weight: 700;
+    color: var(--vinho);
+    font-size: 0.97rem;
+  }
+  .faq-seta { flex-shrink: 0; transition: transform 0.3s; color: var(--rose); font-size: 1.1rem; }
+  .faq-item.open .faq-seta { transform: rotate(45deg); }
+  .faq-resposta {
+    display: none;
+    margin-top: 12px;
+    font-size: 0.92rem;
+    color: var(--suave);
+    line-height: 1.75;
+  }
+  .faq-item.open .faq-resposta { display: block; }
+
+  /* ──── RODAPÉ ──── */
+  footer {
+    background: #120208;
+    color: rgba(255,255,255,0.35);
+    text-align: center;
+    padding: 40px 24px;
+    font-size: 0.8rem;
+  }
+  footer strong { color: var(--ouro); }
+  footer a { color: rgba(255,255,255,0.4); text-decoration: none; }
+
+  /* ──── MOBILE ──── */
+  @media (max-width: 600px) {
+    .preco-card { padding: 36px 24px; }
+    .preco-numero { font-size: 3rem; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ════ HERO ════ -->
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-eyebrow">Ebook Interativo</div>
+    <h1>10 Conversas Que Todo Casal Deve Ter <em>Antes Que Seja Tarde Demais</em></h1>
+    <p class="hero-sub">Um guia para os diálogos que podem salvar, transformar — ou finalmente tornar real — o seu relacionamento.</p>
+    <a href="#comprar" class="hero-cta-btn">Quero transformar meu relacionamento — R$&nbsp;39,90</a>
+    <p class="hero-price-note">Acesso imediato · Pagamento seguro · Leitura em qualquer dispositivo</p>
+  </div>
+  <div class="hero-scroll">
+    <span>Saiba mais</span>
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+  </div>
+</section>
+
+<!-- ════ PROBLEMA ════ -->
+<section class="section problema">
+  <div class="container">
+    <span class="label">O Diagnóstico</span>
+    <h2 class="section-h2">A maioria dos casais <em>não se conhece</em> de verdade.</h2>
+    <p class="section-lead">Dormem juntos, viajam juntos, envelhecem juntos — e ainda assim carregam mundos inteiros que nunca foram ditos. Não por falta de amor. Por falta de conversa.</p>
+
+    <div class="divider"><span>✦</span></div>
+
+    <div class="problema-grid" style="margin-top: 48px;">
+      <div class="problema-card">
+        <span class="icon">💬</span>
+        <h3>O silêncio que machuca</h3>
+        <p>Tópicos como dinheiro, filhos, sexo e fé raramente são conversados com profundidade — e esse silêncio cobra um preço alto com o tempo.</p>
+      </div>
+      <div class="problema-card">
+        <span class="icon">💔</span>
+        <h3>Expectativas não ditas</h3>
+        <p>A maioria das rupturas acontece não porque o amor acabou, mas porque duas pessoas tinham expectativas diferentes que nunca foram verbalizadas.</p>
+      </div>
+      <div class="problema-card">
+        <span class="icon">🔁</span>
+        <h3>Padrões que se repetem</h3>
+        <p>Sem autoconhecimento compartilhado, os casais tendem a repetir os mesmos ciclos de conflito — mesmo quando se amam muito.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════ CITAÇÃO ════ -->
+<section class="citacao-section">
+  <div class="divider" style="margin-bottom: 36px;"><span>♥</span></div>
+  <blockquote>
+    "O amor não é apenas um sentimento. É uma arte que precisa ser praticada — e como toda arte, exige coragem, técnica e, sobretudo, muita conversa."
+  </blockquote>
+  <cite>— Inspirado em Erich Fromm, A Arte de Amar</cite>
+  <div class="divider" style="margin-top: 36px;"><span>♥</span></div>
+</section>
+
+<!-- ════ CONTEÚDO ════ -->
+<section class="section conteudo-section">
+  <div class="container">
+    <span class="label">O que está dentro</span>
+    <h2 class="section-h2">10 conversas. <em>Dezenas de perguntas.</em><br>Uma vida de diferença.</h2>
+    <p class="section-lead">Cada capítulo foi construído com profundidade filosófica e psicológica — mas em linguagem que qualquer casal consegue acessar, sentir e praticar.</p>
+
+    <ul class="conteudo-lista">
+      <li class="conteudo-item">
+        <div class="conteudo-num">1</div>
+        <div>
+          <h3>O Amor Que Temos vs. O Amor Que Precisamos</h3>
+          <p>Entender como cada um precisa ser amado — não apenas como o outro sabe amar.</p>
+        </div>
+      </li>
+      <li class="conteudo-item">
+        <div class="conteudo-num">2</div>
+        <div>
+          <h3>A Ferida Que Ninguém Quer Nomear — Traição & Perdão</h3>
+          <p>Como falar sobre limites, confiança e recomeços antes que qualquer crise aconteça.</p>
+        </div>
+      </li>
+      <li class="conteudo-item">
+        <div class="conteudo-num">3</div>
+        <div>
+          <h3>Fé, Espiritualidade & Sentido de Vida</h3>
+          <p>O que ancora cada um quando tudo desmorona — e como criar um lar com crenças diferentes.</p>
+        </div>
+      </li>
+      <li class="conteudo-item">
+        <div class="conteudo-num">4</div>
+        <div>
+          <h3>O Passado Que Te Formou Antes de Mim</h3>
+          <p>As histórias não contadas que ainda governam comportamentos e reações dentro do casal.</p>
+        </div>
+      </li>
+      <li class="conteudo-item">
+        <div class="conteudo-num">5</div>
+        <div>
+          <h3>Para Onde Estamos Indo Juntos — Futuro & Sonhos</h3>
+          <p>A tragédia dos casais que se amam, mas descobrem tarde demais que queriam coisas diferentes.</p>
+        </div>
+      </li>
+      <li class="conteudo-item">
+        <div class="conteudo-num">6</div>
+        <div>
+          <h3>Filhos — Querer, Criar, Educar</h3>
+          <p>A conversa existencial mais importante que um casal pode ter antes de se tornar família.</p>
+        </div>
+      </li>
+      <li class="conteudo-item">
+        <div class="conteudo-num">7</div>
+        <div>
+          <h3>Sexo & Intimidade — O Que Acontece Quando a Porta Se Fecha</h3>
+          <p>Desejos não ditos, frequências, conexão e o que realmente sustenta o desejo ao longo do tempo.</p>
+        </div>
+      </li>
+      <li class="conteudo-item">
+        <div class="conteudo-num">8</div>
+        <div>
+          <h3>Dinheiro & Projeto de Vida</h3>
+          <p>A conversa que ninguém quer ter — mas que está por trás de quase todos os términos.</p>
+        </div>
+      </li>
+      <li class="conteudo-item">
+        <div class="conteudo-num">9</div>
+        <div>
+          <h3>Romance & Cumplicidade — Como Manter a Chama</h3>
+          <p>A ciência e a arte de permanecer desejado(a) e desejante depois dos primeiros anos.</p>
+        </div>
+      </li>
+      <li class="conteudo-item">
+        <div class="conteudo-num">10</div>
+        <div>
+          <h3>Expectativas & Decepções — O Que Você Esperava de Mim</h3>
+          <p>O mapa das expectativas não faladas que, silenciosamente, vai distanciando dois corações.</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- ════ PARA QUEM ════ -->
+<section class="section para-quem-section">
+  <div class="container">
+    <span class="label">Para quem é</span>
+    <h2 class="section-h2">Este ebook é pra você se...</h2>
+
+    <div class="checks-grid">
+      <div class="check-item">
+        <div class="check-icon">✓</div>
+        <p>Você ama seu parceiro(a) mas sente que vocês poderiam se conhecer muito mais profundamente.</p>
+      </div>
+      <div class="check-item">
+        <div class="check-icon">✓</div>
+        <p>Você e seu amor têm conversas superficiais e raramente chegam nos temas que realmente importam.</p>
+      </div>
+      <div class="check-item">
+        <div class="check-icon">✓</div>
+        <p>Vocês passaram por uma crise e querem reconstruir a intimidade e a confiança com mais consciência.</p>
+      </div>
+      <div class="check-item">
+        <div class="check-icon">✓</div>
+        <p>Você está começando um relacionamento sério e quer construir uma base sólida desde o início.</p>
+      </div>
+      <div class="check-item">
+        <div class="check-icon">✓</div>
+        <p>Você sente que tem assuntos engolidos — que ficam te pesando — mas não sabe como abordá-los.</p>
+      </div>
+      <div class="check-item">
+        <div class="check-icon">✓</div>
+        <p>Você quer um relacionamento mais real, mais íntimo, mais honesto — e está disposto(a) a ter conversas difíceis para chegar lá.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════ DEPOIMENTOS ════ -->
+<section class="section depo-section">
+  <div class="container">
+    <span class="label">O Que Dizem</span>
+    <h2 class="section-h2">Conversas que <em>transformaram casais</em> de verdade</h2>
+
+    <div class="depo-grid">
+      <div class="depo-card">
+        <div class="depo-stars">★★★★★</div>
+        <p class="depo-texto">"Estávamos juntos há 6 anos e achávamos que nos conhecíamos. Depois de fazer as perguntas da conversa sobre o passado, percebemos que havia tanto que nunca tínhamos compartilhado. Chorei muito. Mas foi a melhor noite do nosso relacionamento."</p>
+        <p class="depo-autor">Mariana & Thiago</p>
+        <p class="depo-cidade">São Paulo, SP</p>
+      </div>
+      <div class="depo-card">
+        <div class="depo-stars">★★★★★</div>
+        <p class="depo-texto">"A conversa sobre filhos que nunca tínhamos tido de verdade. Eu queria, ele tinha dúvidas. Esse ebook nos deu o vocabulário e o espaço seguro para finalmente falar sem brigar. Hoje estamos grávidos — e mais unidos do que nunca."</p>
+        <p class="depo-autor">Camila R.</p>
+        <p class="depo-cidade">Belo Horizonte, MG</p>
+      </div>
+      <div class="depo-card">
+        <div class="depo-stars">★★★★★</div>
+        <p class="depo-texto">"Quase nos separamos. Uma amiga me mandou esse ebook numa quinta à noite. Passamos o final de semana inteiro respondendo as perguntas. Na segunda-feira marcamos um terapeuta — não para nos separar, mas para nos salvar. Foi um divisor de águas."</p>
+        <p class="depo-autor">Rafael & Jú</p>
+        <p class="depo-cidade">Curitiba, PR</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════ PREÇO ════ -->
+<section class="preco-section" id="comprar">
+  <div class="preco-card">
+    <span class="preco-label">Acesso Completo</span>
+    <h2 class="preco-titulo">10 Conversas Que Todo Casal Deve Ter — Antes Que Seja Tarde Demais</h2>
+
+    <p class="preco-valor-de">De R$ 97,00</p>
+    <div class="preco-valor">
+      <span class="preco-cifrao">R$</span>
+      <span class="preco-numero">39</span>
+      <span class="preco-cents">,90</span>
+    </div>
+    <p class="preco-nota">pagamento único · acesso vitalício</p>
+
+    <ul class="preco-lista">
+      <li>10 conversas profundas com contexto filosófico e psicológico</li>
+      <li>Mais de 60 perguntas transformadoras</li>
+      <li>Interface interativa — funciona no celular, tablet e computador</li>
+      <li>Reflexões guiadas ao final de cada conversa</li>
+      <li>Acesso imediato após o pagamento</li>
+    </ul>
+
+    <!-- SUBSTITUA O href PELO SEU LINK DE PAGAMENTO (Hotmart, Mercado Pago, PagSeguro etc.) -->
+    <a href="#" class="btn-comprar" onclick="alert('Insira aqui o seu link de pagamento!')">
+      Quero começar agora — R$ 39,90
+    </a>
+
+    <p class="garantia">
+      🔒&nbsp; Pagamento 100% seguro
+    </p>
+  </div>
+</section>
+
+<!-- ════ FAQ ════ -->
+<section class="section faq-section">
+  <div class="container">
+    <span class="label">Dúvidas Frequentes</span>
+    <h2 class="section-h2">Perguntas & Respostas</h2>
+
+    <div class="faq-lista">
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-pergunta">
+          Como funciona o acesso ao ebook?
+          <span class="faq-seta">+</span>
+        </div>
+        <p class="faq-resposta">Após o pagamento, você recebe imediatamente o link de acesso. O ebook é interativo e funciona direto no navegador — sem precisar instalar nada. Funciona no celular, tablet e computador.</p>
+      </div>
+
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-pergunta">
+          Meu parceiro(a) precisa comprar também?
+          <span class="faq-seta">+</span>
+        </div>
+        <p class="faq-resposta">Não. Uma compra dá acesso para o casal. Você pode abrir no celular ou no computador e fazer as conversas juntos — ou cada um ler individualmente e depois conversar.</p>
+      </div>
+
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-pergunta">
+          Funciona para relacionamentos em crise?
+          <span class="faq-seta">+</span>
+        </div>
+        <p class="faq-resposta">Sim — e especialmente para eles. As conversas foram desenhadas para criar um espaço seguro de diálogo. Mas recomendamos que ambos estejam dispostos a participar com abertura e sem julgamentos.</p>
+      </div>
+
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-pergunta">
+          E se eu não estiver em um relacionamento agora?
+          <span class="faq-seta">+</span>
+        </div>
+        <p class="faq-resposta">O ebook também é uma poderosa ferramenta de autoconhecimento. Conhecer as perguntas antes de entrar em um relacionamento sério é uma das melhores formas de se preparar para construir algo sólido.</p>
+      </div>
+
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-pergunta">
+          Há garantia?
+          <span class="faq-seta">+</span>
+        </div>
+        <p class="faq-resposta">Sim. Se por qualquer razão você não ficar satisfeito(a), entre em contato dentro de 7 dias após a compra e devolveremos o seu valor integralmente, sem perguntas.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════ CTA FINAL ════ -->
+<section style="background: linear-gradient(135deg, var(--vinho-dark), var(--vinho)); padding: 80px 24px; text-align: center;">
+  <div style="max-width: 600px; margin: 0 auto;">
+    <div class="divider" style="margin-bottom: 32px;"><span>♥</span></div>
+    <h2 style="font-family: 'Playfair Display', serif; color: #fff; font-size: clamp(1.5rem, 3vw, 2.2rem); line-height: 1.35; margin-bottom: 20px;">Você tem alguém ao seu lado que merece ser realmente <em style="color: var(--ouro);">conhecido</em>.</h2>
+    <p style="color: rgba(255,255,255,0.65); font-size: 1rem; margin-bottom: 40px; line-height: 1.8;">Não espere um momento de crise para ter essas conversas. O melhor momento é agora — enquanto o amor ainda é forte o suficiente para sustentar a verdade.</p>
+    <a href="#comprar" class="hero-cta-btn">Começar agora — R$ 39,90</a>
+    <p style="color: rgba(255,255,255,0.35); font-size: 0.8rem; margin-top: 16px;">Acesso imediato · Pagamento seguro</p>
+    <div class="divider" style="margin-top: 40px;"><span>✦</span></div>
+  </div>
+</section>
+
+<footer>
+  <p><strong>10 Conversas Que Todo Casal Deve Ter</strong></p>
+  <p style="margin-top: 8px;">© 2025 · Todos os direitos reservados · <a href="#">Política de Privacidade</a> · <a href="#">Contato</a></p>
+</footer>
+
+<script>
+  function toggleFaq(item) {
+    const isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item.open').forEach(i => i.classList.remove('open'));
+    if (!isOpen) item.classList.add('open');
+  }
+</script>
+</body>
+</html>

@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>10 Conversas Que Todo Casal Deve Ter — Antes Que Seja Tarde Demais</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Lato:wght@300;400;700&display=swap');
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --vinho: #6B1A2A;
+    --rose: #C4586A;
+    --ouro: #C9A84C;
+    --creme: #FDF6EE;
+    --marfim: #FAF0E6;
+    --texto: #2D1B1B;
+    --suave: #8B5E6A;
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background-color: var(--creme);
+    color: var(--texto);
+    font-family: 'Lato', sans-serif;
+    line-height: 1.8;
+  }
+
+  /* HERO */
+  .hero {
+    background: linear-gradient(135deg, #3D0A14 0%, #6B1A2A 40%, #8B2A3A 70%, #3D0A14 100%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 60px 24px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23C9A84C' fill-opacity='0.06'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    opacity: 0.4;
+  }
+
+  .hero-badge {
+    font-family: 'Lato', sans-serif;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--ouro);
+    border: 1px solid var(--ouro);
+    padding: 6px 18px;
+    border-radius: 50px;
+    margin-bottom: 32px;
+    opacity: 0.9;
+    position: relative;
+  }
+
+  .hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2rem, 5vw, 3.8rem);
+    font-weight: 700;
+    color: #fff;
+    line-height: 1.2;
+    max-width: 820px;
+    margin-bottom: 16px;
+    position: relative;
+  }
+
+  .hero h1 em {
+    color: var(--ouro);
+    font-style: italic;
+  }
+
+  .hero-sub {
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    color: rgba(255,255,255,0.75);
+    max-width: 580px;
+    margin: 20px auto 0;
+    font-weight: 300;
+    position: relative;
+  }
+
+  .divider-ouro {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    justify-content: center;
+    margin: 28px 0;
+    position: relative;
+  }
+  .divider-ouro::before, .divider-ouro::after {
+    content: '';
+    flex: 1;
+    max-width: 120px;
+    height: 1px;
+    background: var(--ouro);
+    opacity: 0.5;
+  }
+  .divider-ouro span { color: var(--ouro); font-size: 1.1rem; }
+
+  .scroll-down {
+    margin-top: 48px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    color: rgba(255,255,255,0.5);
+    font-size: 0.75rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    animation: bounce 2s infinite;
+  }
+  .scroll-down svg { opacity: 0.5; }
+  @keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(6px); }
+  }
+
+  /* INTRO */
+  .intro {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 80px 24px 40px;
+    text-align: center;
+  }
+
+  .intro p {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(1.1rem, 2.5vw, 1.35rem);
+    font-style: italic;
+    color: var(--vinho);
+    line-height: 1.9;
+  }
+
+  .intro p + p { margin-top: 20px; }
+
+  .intro-assinatura {
+    margin-top: 32px;
+    font-size: 0.85rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--suave);
+  }
+
+  /* CONVERSAS */
+  .conversas-section {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 40px 24px 100px;
+  }
+
+  .section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(1.5rem, 3vw, 2.2rem);
+    color: var(--vinho);
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  .section-title span {
+    display: block;
+    font-size: 0.7rem;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--ouro);
+    margin-bottom: 8px;
+  }
+
+  /* CARD */
+  .conversa-card {
+    background: #fff;
+    border-radius: 16px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 24px rgba(107,26,42,0.08);
+    border: 1px solid rgba(107,26,42,0.08);
+    transition: box-shadow 0.3s;
+  }
+  .conversa-card:hover { box-shadow: 0 8px 40px rgba(107,26,42,0.15); }
+
+  .conversa-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 28px 32px;
+    cursor: pointer;
+    user-select: none;
+    transition: background 0.3s;
+  }
+  .conversa-header:hover { background: rgba(107,26,42,0.03); }
+
+  .conversa-num {
+    flex-shrink: 0;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--vinho), var(--rose));
+    color: #fff;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+  }
+
+  .conversa-info { flex: 1; }
+
+  .conversa-tema {
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--ouro);
+    margin-bottom: 4px;
+  }
+
+  .conversa-titulo {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(1rem, 2vw, 1.3rem);
+    color: var(--vinho);
+    font-weight: 600;
+    line-height: 1.3;
+  }
+
+  .conversa-icon {
+    flex-shrink: 0;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 1.5px solid rgba(107,26,42,0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s;
+  }
+  .conversa-card.open .conversa-icon {
+    background: var(--vinho);
+    border-color: var(--vinho);
+    transform: rotate(45deg);
+  }
+  .conversa-icon svg { transition: all 0.3s; }
+  .conversa-card.open .conversa-icon svg path { stroke: #fff; }
+
+  /* BODY DO CARD */
+  .conversa-body {
+    display: none;
+    border-top: 1px solid rgba(107,26,42,0.08);
+  }
+  .conversa-card.open .conversa-body { display: block; }
+
+  .conversa-intro-text {
+    padding: 32px 32px 0;
+    font-size: 1rem;
+    color: #5A3A3A;
+    line-height: 1.85;
+    font-style: italic;
+    font-family: 'Playfair Display', serif;
+    border-left: 3px solid var(--ouro);
+    margin: 0 32px 0;
+    padding-left: 20px;
+  }
+
+  .perguntas-titulo {
+    padding: 28px 32px 8px;
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--suave);
+  }
+
+  .perguntas-lista {
+    padding: 0 32px 36px;
+    list-style: none;
+  }
+  .perguntas-lista li {
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+    padding: 16px 0;
+    border-bottom: 1px dashed rgba(107,26,42,0.1);
+    font-size: 0.97rem;
+    color: var(--texto);
+    line-height: 1.7;
+  }
+  .perguntas-lista li:last-child { border-bottom: none; }
+  .pergunta-num {
+    flex-shrink: 0;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background: var(--creme);
+    border: 1.5px solid var(--rose);
+    color: var(--vinho);
+    font-size: 0.75rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1px;
+  }
+
+  /* REFLEXÃO */
+  .reflexao-box {
+    margin: 0 32px 36px;
+    padding: 20px 24px;
+    background: linear-gradient(135deg, rgba(107,26,42,0.05), rgba(201,168,76,0.07));
+    border-radius: 10px;
+    border-left: 3px solid var(--rose);
+  }
+  .reflexao-box p {
+    font-size: 0.9rem;
+    color: var(--suave);
+    line-height: 1.75;
+  }
+  .reflexao-box strong {
+    display: block;
+    font-size: 0.65rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--rose);
+    margin-bottom: 8px;
+  }
+
+  /* RODAPÉ */
+  footer {
+    background: #2D0A12;
+    color: rgba(255,255,255,0.5);
+    text-align: center;
+    padding: 40px 24px;
+    font-size: 0.82rem;
+  }
+  footer strong { color: var(--ouro); }
+
+  /* ANIMAÇÃO DE ENTRADA */
+  .fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 0.6s forwards;
+  }
+  @keyframes fadeIn {
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .conversa-card:nth-child(1) { animation: fadeIn 0.5s 0.1s forwards; opacity: 0; }
+  .conversa-card:nth-child(2) { animation: fadeIn 0.5s 0.15s forwards; opacity: 0; }
+  .conversa-card:nth-child(3) { animation: fadeIn 0.5s 0.2s forwards; opacity: 0; }
+  .conversa-card:nth-child(4) { animation: fadeIn 0.5s 0.25s forwards; opacity: 0; }
+  .conversa-card:nth-child(5) { animation: fadeIn 0.5s 0.3s forwards; opacity: 0; }
+  .conversa-card:nth-child(6) { animation: fadeIn 0.5s 0.35s forwards; opacity: 0; }
+  .conversa-card:nth-child(7) { animation: fadeIn 0.5s 0.4s forwards; opacity: 0; }
+  .conversa-card:nth-child(8) { animation: fadeIn 0.5s 0.45s forwards; opacity: 0; }
+  .conversa-card:nth-child(9) { animation: fadeIn 0.5s 0.5s forwards; opacity: 0; }
+  .conversa-card:nth-child(10) { animation: fadeIn 0.5s 0.55s forwards; opacity: 0; }
+
+  @media (max-width: 600px) {
+    .conversa-header { padding: 20px; gap: 14px; }
+    .conversa-intro-text, .reflexao-box { margin: 0 20px 0; }
+    .conversa-intro-text { padding-left: 16px; }
+    .reflexao-box { margin-bottom: 24px; }
+    .perguntas-lista { padding: 0 20px 28px; }
+    .perguntas-titulo { padding: 20px 20px 8px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-badge">Ebook Interativo</div>
+  <h1>10 Conversas Que Todo Casal Deve Ter <em>Antes Que Seja Tarde Demais</em></h1>
+  <div class="divider-ouro">
+    <span>♥</span>
+  </div>
+  <p class="hero-sub">Porque o silêncio entre dois corpos que se amam pode ser a maior forma de solidão que existe.</p>
+  <div class="scroll-down">
+    <span>Comece a leitura</span>
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+  </div>
+</section>
+
+<!-- INTRO -->
+<section class="intro">
+  <p>Existe uma ilusão perigosa que os casais cultivam em silêncio: a de que se conhecem.</p>
+  <p>Dormem no mesmo quarto, partilham a mesma mesa, respiram o mesmo ar — e ainda assim carregam mundos inteiros que nunca foram ditos. Não por falta de amor. Mas por falta de coragem. Ou de convite.</p>
+  <p>Este ebook não é sobre salvar relacionamentos. É sobre <strong>habitá-los por inteiro</strong>. É um mapa para os territórios que vocês ainda não exploraram juntos.</p>
+  <p>Cada conversa aqui é uma porta. Do lado de fora, está a versão que vocês apresentam ao mundo. Do lado de dentro, está quem vocês realmente são.</p>
+  <p><em>Abra as portas. Uma a uma. Sem pressa. Com coragem.</em></p>
+  <div class="divider-ouro" style="margin-top: 32px;"><span>✦</span></div>
+  <p class="intro-assinatura">Clique em cada conversa para acessar as perguntas</p>
+</section>
+
+<!-- CONVERSAS -->
+<section class="conversas-section">
+  <h2 class="section-title">
+    <span>As 10 Conversas</span>
+    Que Mudam Tudo
+  </h2>
+
+  <!-- 1 -->
+  <div class="conversa-card" onclick="toggleCard(this)">
+    <div class="conversa-header">
+      <div class="conversa-num">1</div>
+      <div class="conversa-info">
+        <div class="conversa-tema">Amor & Afeto</div>
+        <div class="conversa-titulo">O Amor Que Temos vs. O Amor Que Precisamos</div>
+      </div>
+      <div class="conversa-icon">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M12 5v14M5 12h14" stroke="#6B1A2A" stroke-width="2.5" stroke-linecap="round"/></svg>
+      </div>
+    </div>
+    <div class="conversa-body">
+      <p class="conversa-intro-text">O filósofo grego Platão dizia que o amor não é uma emoção — é uma busca. A busca pela nossa metade perdida. Mas e se a metade que buscamos nunca foi uma pessoa, mas uma versão de nós mesmos que só existe quando somos verdadeiramente vistos? Anthropologicamente, os seres humanos são a única espécie que precisam não apenas de companhia, mas de reconhecimento. Precisamos ser vistos. E dentro de um relacionamento, a pergunta mais urgente não é "você me ama?" — mas sim: "você me conhece?"</p>
+      <div class="perguntas-titulo">Perguntas para esta conversa</div>
+      <ul class="perguntas-lista">
+        <li><span class="pergunta-num">1</span> Como você sabe, de verdade, que se sente amado(a) por mim? O que eu faço — ou deixo de fazer — que te faz sentir visto(a)?</li>
+        <li><span class="pergunta-num">2</span> Existe uma versão de mim que você ama mais? Quando eu sou essa pessoa?</li>
+        <li><span class="pergunta-num">3</span> Você acha que nos amamos da forma que o outro precisa ser amado, ou da forma que nós sabemos dar?</li>
+        <li><span class="pergunta-num">4</span> Há algo em você que você sente que nunca fui capaz de enxergar completamente?</li>
+        <li><span class="pergunta-num">5</span> Se o nosso amor fosse um livro, qual seria o capítulo que você mais teme que eu leia?</li>
+        <li><span class="pergunta-num">6</span> O que você ainda não me pediu que eu fizesse por amor, mas carrega dentro de você como uma necessidade?</li>
+      </ul>
+      <div class="reflexao-box">
+        <strong>✦ Para refletir depois</strong>
+        <p>O amor verdadeiro não é um sentimento constante — é uma escolha renovada todos os dias. Mas essa escolha só pode ser feita conscientemente quando sabemos o que o outro precisa. Essa conversa não tem resposta certa. Tem verdade.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2 -->
+  <div class="conversa-card" onclick="toggleCard(this)">
+    <div class="conversa-header">
+      <div class="conversa-num">2</div>
+      <div class="conversa-info">
+        <div class="conversa-tema">Traição & Perdão</div>
+        <div class="conversa-titulo">A Ferida Que Ninguém Quer Nomear</div>
+      </div>
+      <div class="conversa-icon">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M12 5v14M5 12h14" stroke="#6B1A2A" stroke-width="2.5" stroke-linecap="round"/></svg>
+      </div>
+    </div>
+    <div class="conversa-body">
+      <p class="conversa-intro-text">A traição não começa no corpo. Começa no silêncio. Na distância que se instala quando dois seres deixam de se escolher ativamente e passam a apenas coexistir. O antropólogo Helen Fisher mapeou o cérebro apaixonado e descobriu que o amor romântico ativa os mesmos circuitos da dependência química — e quando esse circuito é rompido por uma traição, o que o cérebro experimenta é literalmente uma abstinência. Não é drama. É biologia. Mas além da neurociência, existe a pergunta filosófica mais corajosa de um relacionamento: <em>o que nos tornamos quando o pior acontece?</em></p>
+      <div class="perguntas-titulo">Perguntas para esta conversa</div>
+      <ul class="perguntas-lista">
+        <li><span class="pergunta-num">1</span> Para você, o que constitui traição? Apenas o corpo, ou também o pensamento, a atenção, o coração entregue a outro?</li>
+        <li><span class="pergunta-num">2</span> Se você descobrisse que fui infiel, qual seria sua primeira reação instintiva — e o que você acha que faria depois, com a cabeça fria?</li>
+        <li><span class="pergunta-num">3</span> Você acredita que é possível perdoar uma traição de verdade — não apenas tolerá-la? Qual seria a diferença para você?</li>
+        <li><span class="pergunta-num">4</span> Existe algo no nosso relacionamento que você sente que nos deixa vulneráveis a esse caminho? Algo que precisamos resolver antes que vire uma porta aberta?</li>
+        <li><span class="pergunta-num">5</span> Se você já foi traído(a) antes, isso ainda carrega peso no modo como você me enxerga ou nos limites que estabelece?</li>
+        <li><span class="pergunta-num">6</span> O que você precisaria ver em mim para sentir que realmente pode confiar — não apenas acreditar, mas confiar de verdade?</li>
+      </ul>
+      <div class="reflexao-box">
+        <strong>✦ Para refletir depois</strong>
+        <p>Falar sobre traição antes que ela aconteça não é pessimismo — é arquitetura. É construir juntos os alicerces de um acordo que não precisa ser testado para ser real. Casais que têm essa conversa raramente precisam tê-la de novo em circunstâncias piores.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 3 -->
+  <div class="conversa-card" onclick="toggleCard(this)">
+    <div class="conversa-header">
+      <div class="conversa-num">3</div>
+      <div class="conversa-info">
+        <div class="conversa-tema">Fé & Espiritualidade</div>
+        <div class="conversa-titulo">No Que Você Acredita Quando Tudo Desmorona?</div>
+      </div>
+      <div class="conversa-icon">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M12 5v14M5 12h14" stroke="#6B1A2A" stroke-width="2.5" stroke-linecap="round"/></svg>
+      </div>
+    </div>
+    <div class="conversa-body">
+      <p class="conversa-intro-text">Em todas as culturas humanas estudadas pela antropologia — das tribos amazônicas às metrópoles europeias — existe um elemento universal: a necessidade de sentido. O filósofo Viktor Frankl sobreviveu a Auschwitz e concluiu que o ser humano pode suportar qualquer "como" se tiver um "porquê". A espiritualidade de um casal não é sobre frequentar o mesmo templo. É sobre compartilhar a mesma âncora quando o mar bate forte.</p>
+      <div class="perguntas-titulo">Perguntas para esta conversa</div>
+      <ul class="perguntas-lista">
+        <li><span class="pergunta-num">1</span> O que você acredita acontece depois da morte? E como essa crença afeta a forma como você vive hoje?</li>
+        <li><span class="pergunta-num">2</span> Você tem fé em algo — seja Deus, o universo, a vida, o acaso? O que é essa fé para você na prática?</li>
+        <li><span class="pergunta-num">3</span> Quando você passa por algo muito difícil, onde você busca força? Em mim, em Deus, em você mesmo(a)?</li>
+        <li><span class="pergunta-num">4</span> Você precisa que eu compartilhe das suas crenças espirituais, ou basta que eu as respeite?</li>
+        <li><span class="pergunta-num">5</span> Como você gostaria que cuidássemos da espiritualidade dos nossos filhos (ou da nossa casa), considerando o que cada um acredita?</li>
+        <li><span class="pergunta-num">6</span> Há algo em que você acredita profundamente e que nunca me contou com medo de ser julgado(a)?</li>
+      </ul>
+      <div class="reflexao-box">
+        <strong>✦ Para refletir depois</strong>
+        <p>Dois seres com crenças diferentes podem construir uma vida linda — desde que compartilhem respeito e curiosidade genuína pelo mundo interior um do outro. O problema não é ter fés distintas. O problema é nunca ter perguntado.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 4 -->
+  <div class="conversa-card" onclick="toggleCard(this)">
+    <div class="conversa-header">
+      <div class="conversa-num">4</div>
+      <div class="conversa-info">
+        <div class="conversa-tema">Passado & Cicatrizes</div>
+        <div class="conversa-titulo">O Que Te Formou Antes de Mim</div>
+      </div>
+      <div class="conversa-icon">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M12 5v14M5 12h14" stroke="#6B1A2A" stroke-width="2.5" stroke-linecap="round"/></svg>
+      </div>
+    </div>
+    <div class="conversa-body">
+      <p class="conversa-intro-text">A psicologia do apego, desenvolvida por John Bowlby, revela algo perturbador e belo ao mesmo tempo: a forma como fomos amados — ou não amados — na infância esculpe o molde pelo qual vamos amar para sempre. Cada pessoa que chega a um relacionamento traz um arquivo inteiro de histórias não contadas, feridas mal curadas, amores que ficaram no meio do caminho. Ignorar esse arquivo é como tentar montar um quebra-cabeça sem olhar para a imagem da caixa.</p>
+      <div class="perguntas-titulo">Perguntas para esta conversa</div>
+      <ul class="perguntas-lista">
+        <li><span class="pergunta-num">1</span> Qual foi a experiência mais dolorosa da sua infância, e como você acha que ela ainda aparece na sua vida adulta — talvez até no nosso relacionamento?</li>
+        <li><span class="pergunta-num">2</span> Quem te ensinou o que é amor? E o que essa pessoa ensinou foi mais através das palavras ou dos exemplos?</li>
+        <li><span class="pergunta-num">3</span> Existe um relacionamento anterior que ainda te assombra de alguma forma — não por amor que restou, mas por mágoa, aprendizado ou arrependimento?</li>
+        <li><span class="pergunta-num">4</span> Tem algo que aconteceu com você que você nunca me contou e que, se eu soubesse, me ajudaria a te entender melhor?</li>
+        <li><span class="pergunta-num">5</span> Qual é o padrão que você percebe em si mesmo(a) e que suspeita ter herdado da sua família — e que quer ou não quer repetir conosco?</li>
+        <li><span class="pergunta-num">6</span> Se o seu eu de 10 anos pudesse ver você hoje neste relacionamento, o que ele pensaria?</li>
+      </ul>
+      <div class="reflexao-box">
+        <strong>✦ Para refletir depois</strong>
+        <p>Conhecer o passado do outro não é julgá-lo. É aprender a amar uma pessoa inteira — não apenas a versão que ela tem coragem de mostrar à luz do dia. O passado não nos define, mas nos explica. E ser explicado por quem amamos é uma das experiências mais profundas de pertencimento que existem.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 5 -->
+  <div class="conversa-card" onclick="toggleCard(this)">
+    <div class="conversa-header">
+      <div class="conversa-num">5</div>
+      <div class="conversa-info">
+        <div class="conversa-tema">Futuro & Sonhos</div>
+        <div class="conversa-titulo">Para Onde Estamos Indo Juntos?</div>
+      </div>
+      <div class="conversa-icon">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M12 5v14M5 12h14" stroke="#6B1A2A" stroke-width="2.5" stroke-linecap="round"/></svg>
+      </div>
+    </div>
+    <div class="conversa-body">
+      <p class="conversa-intro-text">O filósofo Søren Kierkegaard dizia que a vida só pode ser compreendida olhando para trás — mas precisa ser vivida olhando para a frente. Um casal que não conversa sobre o futuro é como dois remadores numa canoa que nunca combinaram para onde vão. Podem ser movidos pela mesma força, usar o mesmo esforço, e mesmo assim chegar em lugares completamente diferentes. A tragédia maior não é não ter os mesmos sonhos. É descobrir isso tarde demais.</p>
+      <div class="perguntas-titulo">Perguntas para esta conversa</div>
+      <ul class="perguntas-lista">
+        <li><span class="pergunta-num">1</span> Se você pudesse desenhar nossa vida daqui a 10 anos — onde moraríamos, como seria nosso cotidiano, o que você estaria fazendo — como seria essa imagem?</li>
+        <li><span class="pergunta-num">2</span> Existe algum sonho seu que você abandonou (ou colocou em pausa) por causa do nosso relacionamento? Como você se sente sobre isso?</li>
+        <li><span class="pergunta-num">3</span> Qual é o seu maior medo em relação ao nosso futuro juntos?</li>
+        <li><span class="pergunta-num">4</span> Se você descobrisse que tem apenas 5 anos de vida, o que você mudaria na forma como estamos vivendo agora?</li>
+        <li><span class="pergunta-num">5</span> Você sente que estamos construindo algo juntos, ou que estamos apenas navegando o presente sem uma direção clara?</li>
+        <li><span class="pergunta-num">6</span> O que você precisaria de mim para se sentir mais seguro(a) em relação ao nosso futuro?</li>
+      </ul>
+      <div class="reflexao-box">
+        <strong>✦ Para refletir depois</strong>
+        <p>Compartilhar sonhos não é garantia de realizá-los juntos. Mas esconder sonhos é quase uma certeza de que, um dia, um de vocês vai precisar ir buscá-los sozinho. Essa conversa é um ato de coragem — e um convite para que o outro também seja corajoso.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 6 -->
+  <div class="conversa-card" onclick="toggleCard(this)">
+    <div class="conversa-header">
+      <div class="conversa-num">6</div>
+      <div class="conversa-info">
+        <div class="conversa-tema">Filhos & Família</div>
+        <div class="conversa-titulo">A Vida Que Queremos (ou Não Queremos) Criar</div>
+      </div>
+      <div class="conversa-icon">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M12 5v14M5 12h14" stroke="#6B1A2A" stroke-width="2.5" stroke-linecap="round"/></svg>
+      </div>
+    </div>
+    <div class="conversa-body">
+      <p class="conversa-intro-text">Nenhuma decisão em um relacionamento carrega mais peso do que essa. Ter filhos não é apenas uma preferência pessoal — é um projeto existencial que redesenha completamente quem você é, como você dorme, como você ama, como você discute, o que você prioriza. A antropologia mostra que em todas as civilizações humanas, a questão da descendência é central — não apenas biologicamente, mas simbolicamente. Um filho é a aposta mais radical que dois seres podem fazer no futuro.</p>
+      <div class="perguntas-titulo">Perguntas para esta conversa</div>
+      <ul class="perguntas-lista">
+        <li><span class="pergunta-num">1</span> Você quer ter filhos? Se sim, quantos, quando e por quê? Se não, o que te levou a essa decisão?</li>
+        <li><span class="pergunta-num">2</span> Se um de nós não puder ter filhos biologicamente, como você imagina que reagiria? Adoção seria uma opção para você?</li>
+        <li><span class="pergunta-num">3</span> Como você foi criado(a), e o que você quer repetir ou definitivamente mudar na forma de criar os nossos filhos?</li>
+        <li><span class="pergunta-num">4</span> Qual é o seu maior medo como pai ou mãe?</li>
+        <li><span class="pergunta-num">5</span> Como você imagina a divisão de responsabilidades entre nós quando tivermos filhos? Carreira, cuidado, financeiro?</li>
+        <li><span class="pergunta-num">6</span> O que você não abre mão de ensinar aos nossos filhos — mesmo que o mundo diga o contrário?</li>
+      </ul>
+      <div class="reflexao-box">
+        <strong>✦ Para refletir depois</strong>
+        <p>A incompatibilidade em relação a filhos é uma das principais causas de ruptura em relacionamentos que, em tudo o mais, funcionam muito bem. Não porque as pessoas são incompatíveis — mas porque nunca tiveram essa conversa cedo o suficiente.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 7 -->
+  <div class="conversa-card" onclick="toggleCard(this)">
+    <div class="conversa-header">
+      <div class="conversa-num">7</div>
+      <div class="conversa-info">
+        <div class="conversa-tema">Sexo & Intimidade</div>
+        <div class="conversa-titulo">O Que Acontece Quando a Porta Se Fecha</div>
+      </div>
+      <div class="conversa-icon">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M12 5v14M5 12h14" stroke="#6B1A2A" stroke-width="2.5" stroke-linecap="round"/></svg>
+      </div>
+    </div>
+    <div class="conversa-body">
+      <p class="conversa-intro-text">O sexo é a linguagem mais honesta que dois corpos podem falar. E ao mesmo tempo, é o assunto sobre o qual os casais menos se falam. Existe uma ironia cruel nisso: somos mais capazes de nos entregarmos fisicamente ao outro do que de conversarmos sobre essa entrega. A filósofa francesa Simone de Beauvoir escreveu que o erotismo é a afirmação mais radical da subjetividade de dois seres. Ou seja: fazer amor de verdade exige conhecer o universo interior do outro — não apenas o corpo.</p>
+      <div class="perguntas-titulo">Perguntas para esta conversa</div>
+      <ul class="perguntas-lista">
+        <li><span class="pergunta-num">1</span> Você se sente satisfeito(a) com a nossa vida sexual? O que você adoraria que fosse diferente — seja em frequência, qualidade ou conexão?</li>
+        <li><span class="pergunta-num">2</span> Existe algo que você deseja ou fantasias que nunca me contou porque tinha medo da minha reação?</li>
+        <li><span class="pergunta-num">3</span> Você sente que há momentos em que fazemos sexo sem realmente nos conectarmos? O que acontece nesses momentos?</li>
+        <li><span class="pergunta-num">4</span> O que faz você se sentir verdadeiramente desejado(a) por mim — e o que te faz se sentir ignorado(a) ou invisível?</li>
+        <li><span class="pergunta-num">5</span> Como você sente que nossa intimidade física mudou desde o início do relacionamento? Para melhor, para pior, ou apenas diferente?</li>
+        <li><span class="pergunta-num">6</span> O que o sexo representa para você — prazer, conexão, amor, segurança? E você sente que eu entendo isso?</li>
+      </ul>
+      <div class="reflexao-box">
+        <strong>✦ Para refletir depois</strong>
+        <p>A morte do desejo num casal raramente começa no quarto. Começa na cozinha, na mesa do jantar, nas pequenas negligências cotidianas. A conversa sobre sexo é, na verdade, uma conversa sobre atenção — e sobre a qualidade da presença que cada um oferece ao outro.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 8 -->
+  <div class="conversa-card" onclick="toggleCard(this)">
+    <div class="conversa-header">
+      <div class="conversa-num">8</div>
+      <div class="conversa-info">
+        <div class="conversa-tema">Dinheiro & Projeto de Vida</div>
+        <div class="conversa-titulo">A Conversa Que Ninguém Quer Ter — Mas Que Destrói Quase Tudo</div>
+      </div>
+      <div class="conversa-icon">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M12 5v14M5 12h14" stroke="#6B1A2A" stroke-width="2.5" stroke-linecap="round"/></svg>
+      </div>
+    </div>
+    <div class="conversa-body">
+      <p class="conversa-intro-text">Pesquisas indicam que questões financeiras estão entre os três principais motivos de término de relacionamentos no mundo inteiro — e ainda assim, é um dos assuntos sobre os quais os casais menos dialogam. O dinheiro não é apenas dinheiro. É um espelho. Ele revela valores, medos, prioridades, a relação com segurança e com liberdade. Quando dois sistemas de crenças sobre dinheiro colidem dentro de um relacionamento, o que colide, na verdade, são duas visões completamente diferentes de mundo.</p>
+      <div class="perguntas-titulo">Perguntas para esta conversa</div>
+      <ul class="perguntas-lista">
+        <li><span class="pergunta-num">1</span> Qual é a sua relação emocional com dinheiro? Ele te dá segurança, ansiedade, culpa, liberdade?</li>
+        <li><span class="pergunta-num">2</span> Como você imagina nossa vida financeira? Contas separadas, juntas, mistas? Quem toma as decisões grandes?</li>
+        <li><span class="pergunta-num">3</span> Você tem dívidas ou segredos financeiros que eu ainda não sei?</li>
+        <li><span class="pergunta-num">4</span> Se um de nós perder o emprego ou passar por uma crise financeira séria, como você imagina que regiríamos — como casal?</li>
+        <li><span class="pergunta-num">5</span> Qual é o seu sonho de vida que depende de uma condição financeira que ainda não temos? E esse sonho está nos nossos planos?</li>
+        <li><span class="pergunta-num">6</span> O que você aprendeu sobre dinheiro na sua família de origem — e o quanto isso ainda governa suas decisões hoje?</li>
+      </ul>
+      <div class="reflexao-box">
+        <strong>✦ Para refletir depois</strong>
+        <p>O amor resolve muita coisa. Mas ele não paga boletos, não dissolve dívidas escondidas e não alinha, sozinho, dois projetos de vida que apontam para direções opostas. Ter essa conversa é um ato de respeito — e de amor adulto.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 9 -->
+  <div class="conversa-card" onclick="toggleCard(this)">
+    <div class="conversa-header">
+      <div class="conversa-num">9</div>
+      <div class="conversa-info">
+        <div class="conversa-tema">Romance & Cumplicidade</div>
+        <div class="conversa-titulo">Como Mantemos a Chama Acesa?</div>
+      </div>
+      <div class="conversa-icon">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M12 5v14M5 12h14" stroke="#6B1A2A" stroke-width="2.5" stroke-linecap="round"/></svg>
+      </div>
+    </div>
+    <div class="conversa-body">
+      <p class="conversa-intro-text">O psicólogo Esther Perel, um dos maiores nomes da terapia de casais no mundo, identificou uma das maiores contradições do amor moderno: buscamos no parceiro ao mesmo tempo segurança e mistério. Conforto e excitação. Certeza e surpresa. E esses são desejos que, por natureza, se contradizem. O desafio de todo casal que dura não é encontrar o equilíbrio perfeito entre eles — é aprender a dançar nessa tensão sem deixar que ela rompa o laço.</p>
+      <div class="perguntas-titulo">Perguntas para esta conversa</div>
+      <ul class="perguntas-lista">
+        <li><span class="pergunta-num">1</span> O que te fazia sentir mais apaixonado(a) por mim no início? Isso ainda existe entre nós, de alguma forma?</li>
+        <li><span class="pergunta-num">2</span> O que eu poderia fazer — algo simples, cotidiano — que te surpreenderia positivamente e alimentaria o seu sentimento por mim?</li>
+        <li><span class="pergunta-num">3</span> Você sente que somos amigos além de parceiros? O que tornaria nossa amizade mais profunda?</li>
+        <li><span class="pergunta-num">4</span> Existe algo que você fazia antes comigo que sente falta e que paramos de fazer sem perceber?</li>
+        <li><span class="pergunta-num">5</span> Como você define romance? O que faz você se sentir cortejado(a) ainda hoje?</li>
+        <li><span class="pergunta-num">6</span> Se nossa vida fosse um filme, em qual cena você se sentiria mais orgulhoso(a) de estar? E qual cena você refilmaria?</li>
+      </ul>
+      <div class="reflexao-box">
+        <strong>✦ Para refletir depois</strong>
+        <p>O romance não morre sozinho. Ele vai sendo sufocado pelas listas de tarefas, pelas rotinas sem intenção, pelos silêncios que viram costume. Mantê-lo aceso não é um talento que se tem — é uma escolha que se faz, diariamente, às vezes nos menores gestos.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 10 -->
+  <div class="conversa-card" onclick="toggleCard(this)">
+    <div class="conversa-header">
+      <div class="conversa-num">10</div>
+      <div class="conversa-info">
+        <div class="conversa-tema">Expectativas & Decepções</div>
+        <div class="conversa-titulo">O Que Você Esperava de Mim — e Eu Não Entregue</div>
+      </div>
+      <div class="conversa-icon">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M12 5v14M5 12h14" stroke="#6B1A2A" stroke-width="2.5" stroke-linecap="round"/></svg>
+      </div>
+    </div>
+    <div class="conversa-body">
+      <p class="conversa-intro-text">Todo relacionamento começa com uma fantasia. Não porque as pessoas sejam ingênuas, mas porque o cérebro apaixonado — inundado de dopamina e ocitocina — literalmente não enxerga o outro como ele é. Enxerga um espelho de seus próprios desejos. E quando a paixão química começa a se estabilizar, o que emerge é a realidade do outro: com suas imperfeições, suas limitações, seus dias ruins. É nesse momento que a maioria dos casais entra em crise — não porque o amor acabou, mas porque a expectativa nunca foi conversada.</p>
+      <div class="perguntas-titulo">Perguntas para esta conversa</div>
+      <ul class="perguntas-lista">
+        <li><span class="pergunta-num">1</span> Existe algo que você esperava de mim — como parceiro(a), como pessoa — que eu nunca entreguei? E você já me disse isso claramente?</li>
+        <li><span class="pergunta-num">2</span> O que você esperava que o nosso relacionamento fosse — e no que ele é diferente do que você imaginava?</li>
+        <li><span class="pergunta-num">3</span> Existe uma decepção que você carrega sobre mim em silêncio? O que impediu você de me falar?</li>
+        <li><span class="pergunta-num">4</span> Você sente que eu te decepciono mais em ações ou em palavras? Em presença ou em atenção?</li>
+        <li><span class="pergunta-num">5</span> O que você precisaria de mim para sentir que o nosso relacionamento chegou ao lugar que você sonhou?</li>
+        <li><span class="pergunta-num">6</span> Se você pudesse me dar uma carta honesta sobre o que espera de nós para os próximos anos, o que ela diria?</li>
+      </ul>
+      <div class="reflexao-box">
+        <strong>✦ Para refletir depois</strong>
+        <p>A decepção não é o fim do amor. É um convite ao amor adulto — àquele que não exige perfeição, mas pede honestidade. Falar sobre expectativas não cumpridas é um dos atos mais corajosos e mais amorosos que dois seres podem fazer um pelo outro.</p>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<!-- FECHAMENTO -->
+<section style="background: linear-gradient(135deg, #3D0A14, #6B1A2A); padding: 80px 24px; text-align: center;">
+  <div style="max-width: 640px; margin: 0 auto;">
+    <div class="divider-ouro" style="margin-bottom: 32px;"><span>♥</span></div>
+    <h2 style="font-family: 'Playfair Display', serif; color: #fff; font-size: clamp(1.6rem, 3vw, 2.2rem); line-height: 1.4; margin-bottom: 24px;">Você não precisa ter todas as respostas.</h2>
+    <p style="color: rgba(255,255,255,0.75); font-size: 1.05rem; line-height: 1.85; margin-bottom: 20px;">Precisa ter a coragem de fazer as perguntas certas. E a generosidade de ouvir, sem julgamento, o que o outro tem a dizer.</p>
+    <p style="color: rgba(255,255,255,0.75); font-size: 1.05rem; line-height: 1.85; margin-bottom: 20px;">Esses diálogos não garantem um relacionamento perfeito. Garantem algo muito mais valioso: um relacionamento <em style="color: var(--ouro);">real</em>.</p>
+    <p style="color: rgba(255,255,255,0.6); font-size: 0.9rem; font-style: italic;">E um relacionamento real, com suas rachaduras e belezas, é o único que vale a pena viver.</p>
+    <div class="divider-ouro" style="margin-top: 40px;"><span>✦</span></div>
+  </div>
+</section>
+
+<footer>
+  <p>Feito com intenção e amor. &nbsp;|&nbsp; <strong>10 Conversas Que Todo Casal Deve Ter</strong></p>
+  <p style="margin-top: 8px; font-size: 0.75rem;">© 2025 — Todos os direitos reservados</p>
+</footer>
+
+<script>
+  function toggleCard(card) {
+    const isOpen = card.classList.contains('open');
+    // fecha todos
+    document.querySelectorAll('.conversa-card.open').forEach(c => c.classList.remove('open'));
+    // abre o clicado, se estava fechado
+    if (!isOpen) {
+      card.classList.add('open');
+      setTimeout(() => {
+        card.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      }, 100);
+    }
+  }
+</script>
+</body>
+</html>
